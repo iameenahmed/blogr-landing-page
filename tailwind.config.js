@@ -19,10 +19,13 @@ export default {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/bg-pattern-intro-desktop.svg')",
         "hero-pattern-mobile": "url('/src/assets/bg-pattern-intro-mobile.svg')",
-        "primary-gradient":
-          "linear-gradient(180deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%))",
+        circles: "url('/src/assets/bg-pattern-circles.svg')",
+        arrowDark: "url('/src/assets/icon-arrow-dark.svg')",
+        arrowLight: "url('/src/assets/icon-arrow-light.svg')",
         "secondary-gradient":
-          "linear-gradient(180deg,hsl(13, 100%, 72%),hsl(353, 100%, 62%))",
+          "linear-gradient(to bottom right, hsl(237, 17%, 21%), hsl(237, 23%, 32%))",
+        "primary-gradient":
+          "linear-gradient(to bottom,hsl(13, 100%, 72%),hsl(353, 100%, 62%))",
       },
     },
   },

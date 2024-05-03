@@ -9,12 +9,12 @@ import NavItem from "./NavItem";
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header>
-      <div>
+    <header className="absolute z-20 w-full px-6 py-12">
+      <div className="flex justify-between">
         <div>
           <img src={logo} alt="blogr logo" />
         </div>
-        <div>
+        <div className="md:hidden">
           {isOpen ? (
             <img
               src={closeIcon}
@@ -34,15 +34,18 @@ const Header = () => {
       <nav>
         {/* Mobile Navigation */}
         {isOpen && (
-          <div>
+          <div className="relative z-20 my-8 w-full space-y-6 rounded-lg bg-white p-6 text-center font-Overpass text-xl font-semibold text-VeryDarkBlue">
             {navlinks.map(({ id, title, subItems }) => (
               <ul key={id}>
                 <NavItem title={title} subItems={subItems} />
               </ul>
             ))}
-            <div>
-              <button>Login</button>
-              <button>Sign Up</button>
+            <hr />
+            <div className="flex flex-col items-center gap-y-4">
+              <button className="cursor-pointer hover:opacity-70">Login</button>
+              <button className="cursor-pointer rounded-full bg-primary-gradient px-12 py-3 text-white transition-opacity duration-300 hover:opacity-70">
+                Sign Up
+              </button>
             </div>
           </div>
         )}
