@@ -5,7 +5,7 @@ const Hero = () => {
         <h1 className="text-4xl font-medium leading-tight xl:text-6xl">
           A modern publishing platform
         </h1>
-        <p className="mt-4 text-lg opacity-80 xl:mt-6 xl:text-xl">
+        <p className="mt-4 text-lg opacity-70 xl:mt-6 xl:text-xl">
           Grow your audience and build your online brand
         </p>
       </div>

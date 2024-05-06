@@ -25,7 +25,7 @@ export default {
         "secondary-gradient":
           "linear-gradient(to bottom right, hsl(237, 17%, 21%), hsl(237, 23%, 32%))",
         "primary-gradient":
-          "linear-gradient(to bottom,hsl(13, 100%, 72%),hsl(353, 100%, 62%))",
+          "linear-gradient(to right, hsl(13, 100%, 72%),hsl(353, 100%, 62%))",
       },
     },
   },

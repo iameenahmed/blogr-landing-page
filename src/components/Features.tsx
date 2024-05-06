@@ -13,7 +13,7 @@ const Features = () => {
           <h5 className="mb-6 text-[1.7rem] font-semibold text-VeryDarkBlue">
             Free, open, simple
           </h5>
-          <p className="tracking-wide text-VeryDarkGrayishBlue xl:leading-[1.75]">
+          <p className="tracking-wide text-VeryDarkGrayishBlue/80 xl:leading-[1.75]">
             Blogr is a free and open source application backed by a large
             community of helpful developers. It supports features such as code
             syntax highlighting, RSS feeds, social media integration,
@@ -26,7 +26,7 @@ const Features = () => {
           <h5 className="mb-5 text-[1.7rem] font-semibold text-VeryDarkBlue">
             Powerful tooling
           </h5>
-          <p className="tracking-wide text-VeryDarkGrayishBlue xl:leading-[1.75]">
+          <p className="tracking-wide text-VeryDarkGrayishBlue/80 xl:leading-[1.75]">
             Batteries included. We built a simple and straightforward CLI tool
             that makes customization and deployment a breeze, but capable of
             producing even the most complicated sites.

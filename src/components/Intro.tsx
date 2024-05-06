@@ -18,12 +18,12 @@ const Intro = () => {
             className="w-full"
           />
         </picture>
-        <div className="px-8 lg:basis-1/2 lg:pl-0 lg:pr-16 xl:mt-7 xl:pr-56">
+        <div className="px-8 lg:basis-1/2 lg:pl-0 lg:pr-16 xl:mt-7 xl:pr-48">
           <div className="my-8 md:my-16 lg:my-6 xl:mb-16 xl:mt-0">
             <h3 className="mb-6 text-[1.725rem] font-semibold text-VeryDarkBlue">
               Introducing an extensible editor
             </h3>
-            <p className="text-VeryDarkGrayishBlue xl:leading-[1.75]">
+            <p className="tracking-wide text-VeryDarkGrayishBlue/80 xl:leading-[1.75]">
               Blogr features an exceedingly intuitive interface which lets you
               focus on one thing: creating content. The editor supports
               management of multiple blogs and allows easy manipulation of
@@ -36,7 +36,7 @@ const Intro = () => {
             <h3 className="mb-6 text-[1.725rem] font-semibold text-VeryDarkBlue">
               Robust content management
             </h3>
-            <p className="text-VeryDarkGrayishBlue xl:leading-[1.75]">
+            <p className="tracking-wide text-VeryDarkGrayishBlue/80 xl:leading-[1.75]">
               Flexible content management enables users to easily move through
               posts. Increase the usability of your blog by adding customized
               categories, sections, format, or flow. With this functionality,
