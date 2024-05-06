@@ -9,10 +9,10 @@ import NavItem from "./NavItem";
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="absolute z-20 w-full px-6 py-12">
+    <header className="absolute z-20 w-full gap-x-16 px-6 py-[3.75rem] md:flex md:items-center xl:px-[11.55vw]">
       <div className="flex justify-between">
-        <div>
-          <img src={logo} alt="blogr logo" />
+        <div className="w-[6.25rem]">
+          <img src={logo} alt="blogr logo" className="w-full" />
         </div>
         <div className="md:hidden">
           {isOpen ? (
@@ -31,15 +31,17 @@ const Header = () => {
         </div>
       </div>
 
-      <nav>
+      <nav className="w-full font-Overpass font-semibold">
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="relative z-20 my-8 w-full space-y-6 rounded-lg bg-white p-6 text-center font-Overpass text-xl font-semibold text-VeryDarkBlue">
-            {navlinks.map(({ id, title, subItems }) => (
-              <ul key={id}>
-                <NavItem title={title} subItems={subItems} />
-              </ul>
-            ))}
+          <div className="relative z-20 my-8 w-full space-y-6 rounded-lg bg-white p-6 text-center text-xl text-VeryDarkBlue  md:hidden">
+            <ul className="space-y-6">
+              {navlinks.map(({ id, title, subItems }) => (
+                <li key={id}>
+                  <NavItem title={title} subItems={subItems} />
+                </li>
+              ))}
+            </ul>
             <hr />
             <div className="flex flex-col items-center gap-y-4">
               <button className="cursor-pointer hover:opacity-70">Login</button>
@@ -50,15 +52,21 @@ const Header = () => {
           </div>
         )}
         {/* Desktop Navigation */}
-        <div className="hidden md:inline-block">
-          {navlinks.map(({ id, title, subItems }) => (
-            <ul key={id}>
-              <NavItem title={title} subItems={subItems} />
-            </ul>
-          ))}
-          <div>
-            <button>Login</button>
-            <button>Sign Up</button>
+        <div className="hidden text-white md:flex md:items-center md:justify-between">
+          <ul className="flex gap-x-14">
+            {navlinks.map(({ id, title, subItems }) => (
+              <li key={id}>
+                <NavItem title={title} subItems={subItems} />
+              </li>
+            ))}
+          </ul>
+          <div className="ms-8 space-x-4 font-Ubuntu">
+            <button className="rounded-full border border-transparent px-5 py-2.5 transition-colors duration-300 hover:border-white">
+              Login
+            </button>
+            <button className="rounded-full bg-white px-9 py-3 text-LightRed transition-colors duration-300 hover:bg-VeryLightRed hover:text-white">
+              Sign Up
+            </button>
           </div>
         </div>
       </nav>

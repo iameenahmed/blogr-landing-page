@@ -7,7 +7,7 @@ import StateOfArt from "./components/StateOfArt";
 
 const App = () => {
   return (
-    <div className="font-Overpass">
+    <div className="overflow-hidden font-Overpass">
       <Header />
       <main>
         <Hero />

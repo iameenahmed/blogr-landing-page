@@ -24,7 +24,7 @@ const navlinks: Navlink[] = [
   {
     id: 3,
     title: "Connect",
-    subItems: ["Contact", "Newsletter", "Marketplace", "Features", "LinkedIn"],
+    subItems: ["Contact", "Newsletter", "LinkedIn"],
   },
 ];
 
