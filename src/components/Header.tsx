@@ -8,6 +8,8 @@ import NavItem from "./NavItem";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [openNavItem, setOpenNavItem] = useState<string | null>(null);
+
   return (
     <header className="absolute z-20 w-full gap-x-16 px-6 py-[3.75rem] md:px-[11.55vw] lg:flex lg:items-center">
       <div className="flex justify-between">
@@ -38,7 +40,12 @@ const Header = () => {
             <ul className="space-y-6">
               {navlinks.map(({ id, title, subItems }) => (
                 <li key={id}>
-                  <NavItem title={title} subItems={subItems} />
+                  <NavItem
+                    title={title}
+                    subItems={subItems}
+                    isOpen={openNavItem === title}
+                    onOpen={() => setOpenNavItem(title)}
+                  />
                 </li>
               ))}
             </ul>
@@ -56,7 +63,12 @@ const Header = () => {
           <ul className="flex gap-x-14">
             {navlinks.map(({ id, title, subItems }) => (
               <li key={id}>
-                <NavItem title={title} subItems={subItems} />
+                <NavItem
+                  title={title}
+                  subItems={subItems}
+                  isOpen={openNavItem === title}
+                  onOpen={() => setOpenNavItem(title)}
+                />
               </li>
             ))}
           </ul>

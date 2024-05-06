@@ -14,7 +14,9 @@ const Footer = () => {
             <li>
               <ul className="space-y-1 text-GrayishBlue lg:space-y-2.5">
                 {subItems.map((subItem, index) => (
-                  <li key={index}>{subItem}</li>
+                  <li key={index} className="cursor-pointer hover:opacity-70">
+                    {subItem}
+                  </li>
                 ))}
               </ul>
             </li>
