@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [frontendmentor.io/solutions/blogr-landing-page](https://www.frontendmentor.io/solutions/blogr-landing-page)
+- Solution URL: [frontendmentor.io/solutions/blogr-landing-page](https://www.frontendmentor.io/solutions/blogr-landing-page-using-reactjs-yq14P6pmU1)
 
 ## My process
 
