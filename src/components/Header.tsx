@@ -44,7 +44,9 @@ const Header = () => {
                     title={title}
                     subItems={subItems}
                     isOpen={openNavItem === title}
-                    onOpen={() => setOpenNavItem(title)}
+                    onOpen={() =>
+                      setOpenNavItem(openNavItem === title ? null : title)
+                    }
                   />
                 </li>
               ))}
@@ -67,7 +69,9 @@ const Header = () => {
                   title={title}
                   subItems={subItems}
                   isOpen={openNavItem === title}
-                  onOpen={() => setOpenNavItem(title)}
+                  onOpen={() =>
+                    setOpenNavItem(openNavItem === title ? null : title)
+                  }
                 />
               </li>
             ))}
