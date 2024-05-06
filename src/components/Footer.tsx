@@ -3,7 +3,7 @@ import navlinks from "../data/navlinks";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center rounded-tr-[6rem] bg-VeryDarkBlackBlue py-20 lg:flex-row lg:items-start xl:px-[11.5vw]">
+    <footer className="flex flex-col items-center rounded-tr-[6rem] bg-VeryDarkBlackBlue py-20 lg:flex-row lg:items-start lg:px-[11.5vw]">
       <div className="mb-16 lg:basis-1/4">
         <img src={logo} alt="blogr logo" />
       </div>

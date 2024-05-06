@@ -9,12 +9,12 @@ import NavItem from "./NavItem";
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="absolute z-20 w-full gap-x-16 px-6 py-[3.75rem] md:flex md:items-center xl:px-[11.55vw]">
+    <header className="absolute z-20 w-full gap-x-16 px-6 py-[3.75rem] md:px-[11.55vw] lg:flex lg:items-center">
       <div className="flex justify-between">
         <div className="w-[6.25rem]">
           <img src={logo} alt="blogr logo" className="w-full" />
         </div>
-        <div className="md:hidden">
+        <div className="lg:hidden">
           {isOpen ? (
             <img
               src={closeIcon}
@@ -34,7 +34,7 @@ const Header = () => {
       <nav className="w-full font-Overpass font-semibold">
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="relative z-20 my-8 w-full space-y-6 rounded-lg bg-white p-6 text-center text-xl text-VeryDarkBlue  md:hidden">
+          <div className="relative z-20 my-8 w-full space-y-6 rounded-lg bg-white p-6 text-center text-xl text-VeryDarkBlue  lg:hidden">
             <ul className="space-y-6">
               {navlinks.map(({ id, title, subItems }) => (
                 <li key={id}>
@@ -52,7 +52,7 @@ const Header = () => {
           </div>
         )}
         {/* Desktop Navigation */}
-        <div className="hidden text-white md:flex md:items-center md:justify-between">
+        <div className="hidden text-white lg:flex lg:items-center lg:justify-between">
           <ul className="flex gap-x-14">
             {navlinks.map(({ id, title, subItems }) => (
               <li key={id}>
